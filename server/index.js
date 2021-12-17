@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 app.get("/api", (req, res) => {
-  res.json({ message: "Mensagem do terceiro deploy!" });
+  res.json({ message: "blablabla!" });
 });
 
 app.get('*', (req, res) => {
